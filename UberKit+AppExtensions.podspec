@@ -1,13 +1,12 @@
 Pod::Spec.new do |s|
 
-s.name             = "UberKit"
+s.name             = "UberKit+AppExtensions"
 s.version          = "0.2"
 s.summary          = "A simple, easy-to-use Objective C wrapper for the Uber API."
-s.homepage         = "https://github.com/sachinkesiraju/UberKit"
+s.homepage         = "https://github.com/gregggreg/UberKit"
 s.license          = { :type => 'MIT', :text => 'Copyright 2014 Sachin Kesiraju' }
-s.author           = { "Sachin Kesiraju" => "me@sachinkesiraju.com" }
-s.source           = { :git => "https://github.com/sachinkesiraju/UberKit.git", :tag => '0.2'}
-s.social_media_url = "https://twitter.com/sachinkesiraju"
+s.author           = { "Greg Gardner" => "greg <at> cromulentlabs.com" }
+s.source           = { :git => "https://github.com/gregggreg/UberKit.git", :tag => '0.2'}
 s.platform     = :ios, '7.0'
 s.requires_arc = true
 s.source_files = 'UberKit', 'UberKit/**/*.{h,m}'

@@ -93,8 +93,4 @@ typedef void (^PromotionHandler) (UberPromotion *promotion, NSURLResponse *respo
 
 - (void) getUserProfileWithCompletionHandler: (ProfileHandler) handler;
 
-#pragma mark - Deep Linking
-
-- (void) openUberApp;
-
 @end

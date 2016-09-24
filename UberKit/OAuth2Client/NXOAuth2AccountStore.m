@@ -472,7 +472,7 @@ NSString * const kNXOAuth2AccountStoreAccountType = @"kNXOAuth2AccountStoreAccou
     NSURL *preparedURL = [client authorizationURLWithRedirectURL:redirectURL];
 
 #if TARGET_OS_IPHONE
-        [[UIApplication sharedApplication] openURL:preparedURL];
+//        [[UIApplication sharedApplication] openURL:preparedURL];
 #else
         [[NSWorkspace sharedWorkspace] openURL:preparedURL];
 #endif

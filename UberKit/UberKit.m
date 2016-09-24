@@ -360,25 +360,12 @@ NSString * const mobile_safari_string = @"com.apple.mobilesafari";
     [[NXOAuth2AccountStore sharedStore] requestAccessToAccountWithType:_applicationName
                                    withPreparedAuthorizationURLHandler:^(NSURL *preparedURL){
 
-                                       [[UIApplication sharedApplication] openURL:preparedURL];
-                                       [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+//                                       [[UIApplication sharedApplication] openURL:preparedURL];
+//                                       [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
                                    }];
 }
 
 #pragma mark - Deep Linking
-
-- (void) openUberApp
-{
-    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"uber://"]])
-    {
-        //Uber is installed
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"uber://"]];
-    }
-    else
-    {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://uber.com"]];
-    }
-}
 
 @end
 
